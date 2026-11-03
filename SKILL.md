@@ -9,7 +9,7 @@ description: Turn ambiguous engineering/product goals into evidence-based decisi
 
 This is an explicit, reproducible method—not a request to expose or imitate hidden model chain-of-thought. Document **decisions, evidence, objections, alternatives, and tests**, not raw internal deliberation.
 
-This is a portable Agent Skills package. Use the current host's tools and permissions; no particular vendor, delegation API, or invocation syntax is required. The optional `agents/openai.yaml` supplies UI metadata only.
+This is a portable Agent Skills package. Use the current host's tools and permissions; no particular vendor, delegation API, or invocation syntax is required.
 
 ## A. Operating contract
 
@@ -160,16 +160,16 @@ For consequential recommendations, include **three specific reasons** if helpful
 
 ## F. Direct invocation examples
 
-Use the invocation syntax supported by your agent (for example, `$critical-briefsmith` or `/critical-briefsmith`), or explicitly ask it to read this SKILL.md. The examples below use the dollar-prefix syntax:
+Ask your agent to use critical-briefsmith and name the desired mode. If the skill is not discovered automatically, ask it to read this SKILL.md. For example:
 
 ```text
-$critical-briefsmith DISCUSS: Is my proposed architecture overcomplicated? Compare the smallest viable alternatives, challenge me, and do not edit code.
+Use critical-briefsmith in DISCUSS mode: Is my proposed architecture overcomplicated? Compare the smallest viable alternatives, challenge me, and do not edit code.
 
-$critical-briefsmith BRIEF: Write one self-contained agent implementation assignment for this feature. Preserve repo constraints; include real acceptance criteria. Do not implement it yet.
+Use critical-briefsmith in BRIEF mode: Write one self-contained agent implementation assignment for this feature. Preserve repo constraints; include real acceptance criteria. Do not implement it yet.
 
-$critical-briefsmith EXECUTE: Inspect the actual repository, pick a defensible minimal approach, ask a read-only skeptical subagent if available, implement the authorized change, test it, and stop. Do not send me a prompt for another agent.
+Use critical-briefsmith in EXECUTE mode: Inspect the actual repository, pick a defensible minimal approach, ask a read-only skeptical subagent if available, implement the authorized change, test it, and stop. Do not send me a prompt for another agent.
 
-$critical-briefsmith REVIEW: Compare this implementation report to the original outcome and independent evidence. Identify the decisive remaining gap and the single smallest next step.
+Use critical-briefsmith in REVIEW mode: Compare this implementation report to the original outcome and independent evidence. Identify the decisive remaining gap and the single smallest next step.
 ```
 
 When the agent is already acting on a request to execute, these invocations are **not** a reason to wait for further authorization for normal in-scope edits. External, destructive, costly, or otherwise gated actions still need appropriate permission. Never report an absent subagent or hardware test as if it happened.

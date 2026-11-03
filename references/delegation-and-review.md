@@ -44,7 +44,7 @@ Do not draft an entirely new architecture unless the proposed one cannot
 meet the user's outcome. Do not ask another agent to plan for you.
 ```
 
-To ask a subagent to apply this skill, refer to `$critical-briefsmith REVIEW` **only when the environment actually supports skill invocation inside subagents**. Otherwise send the packet directly. No assumption of inherited skill context.
+To ask a subagent to apply this skill, ask it to use critical-briefsmith in REVIEW mode **only when the environment actually supports skill invocation inside subagents**. Otherwise send the packet directly. No assumption of inherited skill context.
 
 Review the relevant original artifacts before endorsing consequential claims. Use the previous agent's summary to locate evidence, not as a substitute for it. If access is unavailable, state the limitation and narrow the verdict. Preserve confidentiality when passing sources; access to private material does not authorize redistribution.
 
