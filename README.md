@@ -1,5 +1,7 @@
 # Critical Briefsmith
 
+[Find on Skills.sh](https://skills.sh/drinduka383/critical-briefsmith/critical-briefsmith)
+
 An agent-agnostic skill for evidence-based decisions, actionable implementation briefs, bounded execution, and critical reviews. Uses the open [Agent Skills format](https://agentskills.io/).
 
 ## Install
