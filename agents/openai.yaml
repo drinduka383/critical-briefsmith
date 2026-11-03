@@ -1,0 +1,4 @@
+interface:
+  display_name: "Critical Briefsmith"
+  short_description: "Decide critically, delegate safely, and ship verified work"
+  default_prompt: "Use $critical-briefsmith to identify my actual outcome, challenge your preferred solution, record a concise evidence-based decision, and follow the requested DISCUSS, BRIEF, EXECUTE, or REVIEW mode. If implementation is authorized, build and test rather than writing another prompt."
