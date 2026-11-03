@@ -21,6 +21,9 @@ USER OUTCOME: <observable success and acceptable fallback>
 CURRENT FAILURE: <what the user actually experiences>
 APPROACH: <proposed solution or implementation contract>
 AUTHORITATIVE FACTS: <verified facts with evidence>
+ORIGINAL SOURCES: <accessible relevant artifacts or source excerpts; provenance>
+VERIFICATION LIMITS: <what existing checks prove and leave untested>
+CONSEQUENTIAL CHOICES: <defaults, assumptions, scope changes, requirement interpretations>
 HARD CONSTRAINTS: <must preserve / may not do>
 ASSUMPTIONS: <what we don't know yet>
 ACCEPTANCE TESTS: <what would demonstrate success>
@@ -42,6 +45,8 @@ meet the user's outcome. Do not ask another agent to plan for you.
 ```
 
 To ask a subagent to apply this skill, refer to `$critical-briefsmith REVIEW` **only when the environment actually supports skill invocation inside subagents**. Otherwise send the packet directly. No assumption of inherited skill context.
+
+Review the relevant original artifacts before endorsing consequential claims. Use the previous agent's summary to locate evidence, not as a substitute for it. If access is unavailable, state the limitation and narrow the verdict. Preserve confidentiality when passing sources; access to private material does not authorize redistribution.
 
 ## Reviewer reconciliation is obligatory
 

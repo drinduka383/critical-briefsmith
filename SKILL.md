@@ -16,7 +16,7 @@ This is a portable Agent Skills package. Use the current host's tools and permis
 1. **Outcome over mechanism.** The user's lived experience is the objective. A proposed feature, framework, test count, score, or report is a tool or proxy, not success.
 2. **Challenge before agreeing.** Identify at least one plausible way the proposed solution could fail even if implemented perfectly. Challenge your own initial recommendation as vigorously as the user's.
 3. **Stay faithful to constraints.** Distinguish non-negotiable requirements, preferences, fallbacks, guesses, and permissions. Never convert a preference into a hard rule or a guess into a confirmed fact.
-4. **Evidence with provenance.** Prefer actual repository state, tests, source documentation, user artifacts, and target hardware over reports or confident language. Label uncertain claims.
+4. **Evidence with provenance.** Prefer actual repository state, tests, source documentation, user artifacts, and target hardware over reports or confident language. Label uncertain claims. Inspect the relevant original sources behind consequential claims; another agent's summary is a lead, not independent evidence. If originals are inaccessible, report that verification limit.
 5. **One owner, bounded helpers.** A primary executor owns integration and the result. Subagents investigate or challenge narrow questions; they do not begin an endless planner-to-planner relay.
 6. **Proportionate detail.** An intricate task earns a deep brief; a small task gets a small contract. Exclude boilerplate that cannot change implementation or prevent a failure.
 7. **Do the work when authorized.** A request to implement is not a request to produce another prompt. A request to brainstorm is not permission to modify code, ship or push.
@@ -115,7 +115,7 @@ State relevant **in scope / out of scope / immutable / permission gate**. Verify
 
 Do not generalize a repo-specific forbidden path to other projects. In a repository with explicitly forbidden content, avoid touching or enumerating it, avoid sweeping cleanup, and stage named files rather than `git add .`.
 
-Set a finite proof condition: component test, integration test, real-world acceptance test, or acknowledged blocking external step. Never claim higher-level proof based on lower-level tests.
+Set a finite proof condition: component test, integration test, real-world acceptance test, or acknowledged blocking external step. Never claim higher-level proof based on lower-level tests. Define what verification must establish before implementation. For each material check, report what it proves and what it leaves untested; inspect its actual inputs and output rather than relying on a green status. A secret scan, for example, does not establish that material is appropriate for public release.
 
 ### 7. Deliver according to mode
 
@@ -151,9 +151,9 @@ A subagent should return **findings, evidence, counterexamples, and a concrete t
 
 Give the requested artifact or action outcome first. Then, when material, include:
 
-1. **Decision:** what was chosen and what was rejected.
-2. **Evidence:** what was actually read, tested and verified.
-3. **Limits:** what was only documented, mocked, assumed or untested.
+1. **Decision:** consequential choices, including defaults, assumptions, scope changes, and interpretations of conflicting requirements; explain material tradeoffs so the user can assess the result.
+2. **Evidence:** original sources inspected and actual checks, with what each material check establishes.
+3. **Limits:** what those checks miss and what remains documented, mocked, assumed, inaccessible or untested.
 4. **Next:** the single smallest remaining action, or “complete.”
 
 For consequential recommendations, include **three specific reasons** if helpful. Don't fabricate test results, source rights, hardware compatibility or successful remote actions. If the user requested a full prompt, deliver one coherent text block; if execution, show the artifact and its verification rather than another prompt.

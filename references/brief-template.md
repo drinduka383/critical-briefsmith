@@ -44,6 +44,7 @@ ACCEPTANCE CRITERIA
 Objective observable assertions, input/output locations, sample scenarios,
 negative tests, permissions and nonregression.
 Separate mocked tests from real component and real device tests.
+Define what each material check proves and what it cannot establish.
 
 REPRODUCIBILITY AND PRESERVATION
 Capture baseline and hashes where useful; isolate experiments;
@@ -56,7 +57,8 @@ Do not advance unrelated milestones to cover an incomplete core task.
 
 FINAL REPORT
 What actually changed; exact paths/commands; test evidence;
-what works, what wasn't physically verified; risks and next smallest step.
+what each material check proves and misses; consequential defaults, assumptions,
+scope changes and requirement interpretations; risks and next smallest step.
 ```
 
 ## Calibrate scope
